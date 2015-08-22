@@ -1,4 +1,3 @@
-Router.route('/', {
-	template: 'home',
-	name: 'home'
+Router.route('/', function() {
+	this.render('home');
 });
