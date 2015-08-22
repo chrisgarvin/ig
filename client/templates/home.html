@@ -1,10 +1,19 @@
 <template name="home">
-	{{#if currentUser}} Welcome <a href="http://www.instagram.com/{{currentUser.services.instagram.username}}">{{currentUser.services.instagram.username}}</a>!
-	<br>
+	<div class="header">
 
-	<img src={{currentUser.services.instagram.profile_picture}}>
+		{{#if currentUser}} Welcome <a href="http://www.instagram.com/{{currentUser.services.instagram.username}}">{{currentUser.services.instagram.username}}</a>!
+		<br>
 
-	<a href="#" class="logout">log out</a> {{else}}
-	<a href="#" class="login">log in</a> {{/if}}
+		<img src={{currentUser.services.instagram.profile_picture}}>
+
+		<a href="#" class="logout">log out</a>
+		<br>
+		<div class="taggedPhotos">
+
+
+		</div>{{else}}
+		<a href="#" class="login">log in</a> {{/if}}
+
+	</div>
 
 </template>
