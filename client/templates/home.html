@@ -1,5 +1,10 @@
 <template name="home">
 
-Welcome {{currentUser.profile.name}}
+{{#if currentUser}}
+	<h1>Welcome {{currentUser.services.instagram.username}}</h1>
+	<a href="#" class="logout">log out</a>
+{{else}}
+	<a href="#" class="login">log in</a>
+{{/if}}
 
 </template>
