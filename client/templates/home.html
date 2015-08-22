@@ -1,11 +1,10 @@
 <template name="home">
-{{#if currentUser}}
-Welcome <a href="http://www.instagram.com/{{currentUser.services.instagram.username}}">{{currentUser.services.instagram.username}}</a>! <br>
+	{{#if currentUser}} Welcome <a href="http://www.instagram.com/{{currentUser.services.instagram.username}}">{{currentUser.services.instagram.username}}</a>!
+	<br>
 
-<img src={{currentUser.services.instagram.profile_picture}}>
+	<img src={{currentUser.services.instagram.profile_picture}}>
 
-{{else}}
-LOG IN HERE
-{{/if}}
+	<a href="#" class="logout">log out</a> {{else}}
+	<a href="#" class="login">log in</a> {{/if}}
 
 </template>
