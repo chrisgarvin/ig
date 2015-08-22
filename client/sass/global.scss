@@ -1,4 +1,30 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,700,900,400);
+
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: inherit;
+}
 
 body {
-  // background-color: black;
+	min-height: 100vh;
+ 	font-family: Roboto, helvetica;
+ 	font-weight: 100;
+ 	color: #f6f6f6;
+ 	background-color: #f6f6f6;
+ 	background-image: linear-gradient(to right top, rgba(255,0,0,.25), rgba(0,195,255,1), rgba(0,255,0,.1));
 }
+
+.login-holder {
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+	font-size: 3em;
+}
+
