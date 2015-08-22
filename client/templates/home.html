@@ -6,14 +6,13 @@
 
 		<img src={{currentUser.services.instagram.profile_picture}}>
 
-		<a href="#" class="logout">log out</a>
-		<br>
-		<div class="taggedPhotos">
+	<a href="#" class="logout">log out</a>
+</div>
+	{{else}}
+		<div class="login-holder">
+			<a href="#" class="login btn">log in</a>
+		</div>
+	{{/if}}
 
-
-		</div>{{else}}
-		<a href="#" class="login">log in</a> {{/if}}
-
-	</div>
 
 </template>
