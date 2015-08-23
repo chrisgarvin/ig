@@ -1,13 +1,13 @@
 <template name="home">
-	<div class="header">
 
 		{{#if currentUser}} Welcome <a href="http://www.instagram.com/{{currentUser.services.instagram.username}}">{{currentUser.services.instagram.username}}</a>!
 		<br>
-
 		<img src={{currentUser.services.instagram.profile_picture}}>
-
+	<br>
 	<a href="#" class="logout">log out</a>
-</div>
+	<div class="photos">
+	</div>
+
 	{{else}}
 		<div class="login-holder">
 			<a href="#" class="login btn">log in</a>
